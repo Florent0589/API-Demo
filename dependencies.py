@@ -3,13 +3,13 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from models import User
 from models.User import UserInDB
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
 users_dictionary = {
     'Ayanda': {
         "username": 'Ayanda',
-        "full_name": "Smartz Custom User",
-        "email": "dev@smartz-solutions.com",
+        "full_name": "Default User",
+        "email": "",
         "hashed_password": '123456',
         "disabled": False,
     },
